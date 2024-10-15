@@ -27,7 +27,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>cis.Fibonacci</mainClass>
+                            <mainClass>com.example.fibonacci-project</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
