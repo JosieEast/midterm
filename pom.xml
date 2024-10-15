@@ -9,6 +9,19 @@
     
     <build>
         <plugins>
+            <!-- Maven Jar Plugin to specify the main class -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>cis.Fibonacci</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
             <!-- Site generation plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -33,11 +46,11 @@
             <version>5.7.0</version>
             <scope>test</scope>
         </dependency>
-         <dependency>
-        <groupId>ch.qos.logback</groupId>
-        <artifactId>logback-classic</artifactId>
-        <version>1.2.7</version> <!-- or the latest version -->
-    </dependency>
+        
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.7</version> <!-- or the latest version -->
+        </dependency>
     </dependencies>
-
 </project>
