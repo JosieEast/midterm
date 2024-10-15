@@ -43,7 +43,14 @@
 
     <dependencies>
         <!-- JUnit 5 dependency for testing -->
+         <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter</artifactId>
+        <version>5.7.0</version>
+        <scope>test</scope>
+    </dependency>
         <dependency>
+        
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.7.0</version>
